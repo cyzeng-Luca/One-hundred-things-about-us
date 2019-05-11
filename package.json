@@ -43,6 +43,7 @@
     }
   },
   "lint-staged": {
+    "linters": {
       "{mock,src,test}/**/*.{js,tsx,json}": [
         "prettier --trailing-comma es5 --single-quote --write",
         "git add"
@@ -51,5 +52,6 @@
         "eslint --fix",
         "git add"
       ]
+    }
   }
 }
