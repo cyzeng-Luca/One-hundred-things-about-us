@@ -1,0 +1,18 @@
+{
+    "extends": [ 
+      "airbnb-base",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "useJSXTextNode": true,
+      "project": "./tsconfig.json",
+      "tsconfigRootDir": "./"
+    }
+  }
