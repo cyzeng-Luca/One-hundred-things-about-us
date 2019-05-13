@@ -46,7 +46,7 @@
   "lint-staged": {
     "linters": {
       "{mock,src,test}/**/*.{js,tsx,json}": [
-        "prettier --trailing-comma es5 --single-quote --write",
+        "prettier --trailing-comma es5  --write",
         "git add"
       ],
       "{mock,src,test}/**/*.{js,tsx}": [
