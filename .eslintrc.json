@@ -15,6 +15,7 @@
       "ecmaFeatures": {
         "jsx": true
       },
+      "root": true,
       "useJSXTextNode": true,
       "project": "./tsconfig.json",
       "tsconfigRootDir": "./"

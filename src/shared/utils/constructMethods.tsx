@@ -1,9 +1,8 @@
-/* eslint-disable no-unused-vars */
 import { Component } from "react";
 import { YellowBox } from "react-native";
 import { shallowEqualImmutable } from "react-immutable-render-mixin";
 
-export const setupWarning = () => {
+export const setupWarning = (): void => {
   YellowBox.ignoreWarnings(["source.uri should not be an empty string"]);
 };
 
@@ -15,7 +14,7 @@ export class BaseComponent extends Component {
     };
   }
 
-  public shouldComponentUpdate(nextProps: any, nextState: any): boolean {
+  public shouldComponentUpdate(nextProps: {}, nextState: {}): boolean {
     return (
       !shallowEqualImmutable(this.props, nextProps) ||
       !shallowEqualImmutable(this.state, nextState)
