@@ -67,30 +67,6 @@
             "./src/shared/utils"
           ],
           [
-            "@hocs",
-            "./src/shared/hocs"
-          ],
-          [
-            "@configs",
-            "./src/shared/configs"
-          ],
-          [
-            "@apis",
-            "./src/apis"
-          ],
-          [
-            "@commonStore",
-            "./src/shared/commonStore"
-          ],
-          [
-            "@shared",
-            "./src/shared"
-          ],
-          [
-            "@reduxs",
-            "./src/reduxs"
-          ],
-          [
             "@src",
             "./src/"
           ]
