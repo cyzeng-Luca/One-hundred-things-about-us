@@ -65,10 +65,6 @@
           [
             "@utils",
             "./src/shared/utils"
-          ],
-          [
-            "@src",
-            "./src/"
           ]
         ],
         "extensions": [
