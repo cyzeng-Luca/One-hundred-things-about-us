@@ -4,7 +4,7 @@ import { BaseComponent } from "@utils/constructMethods";
 import Content from "./Content";
 
 export default class App extends BaseComponent {
-  public render(): Element {
+  public render() {
     return <Content />;
   }
 }

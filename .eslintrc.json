@@ -63,22 +63,6 @@
       "alias": {
         "map": [
           [
-            "types",
-            "./src/types"
-          ],
-          [
-            "@assets",
-            "./src/assets"
-          ],
-          [
-            "@pages",
-            "./src/pages"
-          ],
-          [
-            "@components",
-            "./src/shared/components"
-          ],
-          [
             "@utils",
             "./src/shared/utils"
           ],
