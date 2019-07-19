@@ -3,46 +3,38 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "react-native start",
     "test": "jest",
-    "bundle:ios": "APP_ENV=product node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js  --platform ios --dev false --bundle-output ./ios/bundle/wormHole.jsbundle --assets-dest ./ios/bundle --sourcemap-output ./ios/bundle/wormHole.jsbundle.map"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "immutable": "^4.0.0-rc.12",
-    "react": "16.8.3",
-    "react-immutable-render-mixin": "^0.9.7",
-    "react-native": "0.59.5",
-    "react-native-elements": "^1.1.0",
-    "react-native-gesture-handler": "^1.2.1",
-    "react-native-safe-area-view": "^0.14.4",
-    "react-native-vector-icons": "^6.4.2",
-    "react-navigation": "^3.11.0"
+    "react": "16.8.6",
+    "react-native": "0.60.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/runtime": "^7.4.4",
-    "@types/jest": "^24.0.12",
-    "@types/react": "^16.8.16",
-    "@types/react-native": "^0.57.51",
-    "@types/react-test-renderer": "^16.8.1",
-    "@typescript-eslint/eslint-plugin": "^1.7.0",
-    "@typescript-eslint/parser": "^1.7.0",
-    "babel-jest": "^24.8.0",
-    "babel-plugin-module-resolver": "^3.2.0",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^4.2.0",
-    "eslint-import-resolver-babel-module": "^5.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.13.0",
-    "husky": "^2.2.0",
+    "@types/jest": "^24.0.15",
+    "@types/react": "^16.8.23",
+    "@types/react-native": "^0.60.2",
+    "@types/react-test-renderer": "^16.8.2",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.18.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^3.0.1",
     "jest": "^24.8.0",
-    "lint-staged": "^8.1.6",
-    "metro-react-native-babel-preset": "^0.54.0",
-    "prettier": "^1.17.0",
-    "react-test-renderer": "16.8.3",
-    "typescript": "^3.4.5"
+    "lint-staged": "^9.2.0",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "prettier": "^1.18.2",
+    "react-native-typescript-transformer": "^1.2.12",
+    "react-test-renderer": "16.8.6",
+    "stylelint": "^10.1.0",
+    "stylelint-react-native": "^2.1.1",
+    "typescript": "^3.5.3"
   },
   "jest": {
     "preset": "react-native"
@@ -53,15 +45,13 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "{mock,src,test}/**/*.{js,tsx,json}": [
-        "prettier --trailing-comma es5  --write",
-        "git add"
-      ],
-      "{mock,src,test}/**/*.{js,tsx}": [
-        "eslint --fix",
-        "git add"
-      ]
-    }
+    "{mock,src,test}/**/*.{js,jsx,ts,tsx,json}": [
+      "prettier  es5  --write",
+      "git add"
+    ],
+    "{mock,src,test}/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
