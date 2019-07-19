@@ -7,6 +7,7 @@
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
   "plugins": [
     "import",
     "@typescript-eslint"
@@ -57,15 +58,6 @@
       }
     ]
   },
-  "env": {
-    "browser": true,
-    "node": true
-  },
-  "globals": {
-    "__DEV__": true,
-    "GLOBAL": true
-  },
-  "parser": "@typescript-eslint/parser",
   "settings": {
     "import/resolver": {
       "alias": {
